@@ -58,28 +58,28 @@
         }
     },
         "equipments":{
-                "taps":[{
+                "taps":{
                    "tap-co": "FTTX_CO",
                    "tap-cl": "FTTX_CL"
-                 } ],
-                "splitters":[{
+                 } ,
+                "splitters":{
                     "opt-splitter-2":"OPT_1x2_SPL",
                     "dual-splitter-2":"FTTX_DUAL_1X2_SPL",
                     "dual-splitter-32":"FTTX_DUAL_1X32_SPL"
-                 } ],
-                "splitters_distributive":[{
+                 } ,
+                "splitters_distributive":{
                    "dist-spl-2": "FTTX_CO_1X2_SPL",
                    "dis-spl-32" :"FTTX_CO_1X32_SPL",
                     "dist-spl-64" :"FTTX_CO_1X64_SPL"
-            }],
-                "enclosures":[{
+            },
+                "enclosures":{
                    "spl-dist-enclosure-B66":"FTTX_CO_450B66_SPL_DIST",
                    "spl-dist-enclosure-DD66":"FTTX_CO_450DD66_SPL_DIST"
-                }],
-                "cabinets":[{
+                },
+                "cabinets":{
                    "cab-olt": "FTTX_VN_ENTRA_SF-4X_OLT",
                     "cab-sdc":"FTTX_SDC"
-                 } ]
+                 } 
             }
              
             
