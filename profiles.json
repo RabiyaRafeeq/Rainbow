@@ -1,0 +1,86 @@
+ {
+        "profile-name":"PDC-SDC",
+        "ote-mst":{
+            "max-drop-lenght":1500,
+            "max-drop-per-span":3,
+            "max-span-from-tap":3,
+            "aerial-rule":{
+                "tap-types":[
+                    "hmst",
+                    "ote"
+                ],
+                "ote-min-fiber-count-on-line":96,
+                "hmst-min-fiber-count-on-line":144
+            },
+            "underground-rule":{
+                "tap-types":[
+                    "smst"
+                ]
+            },
+            "tail-distance":100,
+            "tap-sizes":[2,4,8,12]   
+        },
+        "sheaths":{ 
+            "route": {
+            "trunk-to-OLT": {
+                "length": 100,
+                "sheath-size":"12ct"
+            },
+            "OLT-to-distribution": {
+                "same pole": {
+                    "length":100,
+                    "sheath-size":"12ct"
+                }
+            }
+        },
+        "distribution-to-service": {
+            "cable-type":"12CT",
+            "spare-percentage":25,
+            "trunk-spare-fiber-count":24,
+            "reel-length":7500,
+            "loops":{
+                "1500-feet":100,
+                "RR-xing":200,
+                "aerial-underground":100,
+                "aerial-cans":50,
+                "underground-cans":25
+            },
+            "offset-from-strand":17.5,
+            "overlash": {
+                "distirbution-on-distribution": {
+                    "overlash": false
+                },
+                "distirbution-on-trunk": {
+                    "overlash": true
+                }
+            },
+            "offset-from-cable":7.5
+        }
+    },
+        "equipments":{
+                "taps":[{
+                   "tap-co": "FTTX_CO",
+                   "tap-cl": "FTTX_CL"
+                 } ],
+                "splitters":[{
+                    "opt-splitter-2":"OPT_1x2_SPL",
+                    "dual-splitter-2":"FTTX_DUAL_1X2_SPL",
+                    "dual-splitter-32":"FTTX_DUAL_1X32_SPL"
+                 } ],
+                "splitters_distributive":[{
+                   "dist-spl-2": "FTTX_CO_1X2_SPL",
+                   "dis-spl-32" :"FTTX_CO_1X32_SPL",
+                    "dist-spl-64" :"FTTX_CO_1X64_SPL"
+            }],
+                "enclosures":[{
+                   "spl-dist-enclosure-B66":"FTTX_CO_450B66_SPL_DIST",
+                   "spl-dist-enclosure-DD66":"FTTX_CO_450DD66_SPL_DIST"
+                }],
+                "cabinets":[{
+                   "cab-olt": "FTTX_VN_ENTRA_SF-4X_OLT",
+                    "cab-sdc":"FTTX_SDC"
+                 } ]
+            }
+             
+            
+        }
